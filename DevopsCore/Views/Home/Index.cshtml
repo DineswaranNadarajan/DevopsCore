@@ -1,0 +1,22 @@
+﻿@model IList<DevopsCore.Models.PostModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h2>Post List</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.iId)</td>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            </tr>
+        }
+    </tbody>
+</table>
