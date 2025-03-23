@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: ubuntu-latest
+  name: '23 mARCH V1'  # Change 'Default' to your self-hosted agent pool name if it's different.
 
 variables:
   buildConfiguration: 'Release'
@@ -15,3 +15,4 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
