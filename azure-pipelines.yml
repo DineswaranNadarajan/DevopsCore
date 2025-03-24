@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: '23 mARCH V1'  # Change 'Default' to your self-hosted agent pool name if it's different.
+  name: 'Default'  # Change 'Default' to your self-hosted agent pool name if it's different.
 
 variables:
   buildConfiguration: 'Release'
